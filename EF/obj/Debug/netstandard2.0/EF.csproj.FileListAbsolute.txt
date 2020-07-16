@@ -1,0 +1,9 @@
+D:\MyToDoApp\EF\bin\Debug\netstandard2.0\EF.deps.json
+D:\MyToDoApp\EF\bin\Debug\netstandard2.0\EF.dll
+D:\MyToDoApp\EF\obj\Debug\netstandard2.0\EF.AssemblyInfoInputs.cache
+D:\MyToDoApp\EF\obj\Debug\netstandard2.0\EF.AssemblyInfo.cs
+D:\MyToDoApp\EF\bin\Debug\netstandard2.0\EF.pdb
+D:\MyToDoApp\EF\obj\Debug\netstandard2.0\EF.dll
+D:\MyToDoApp\EF\obj\Debug\netstandard2.0\EF.pdb
+D:\MyToDoApp\EF\obj\Debug\netstandard2.0\EF.csprojAssemblyReference.cache
+D:\MyToDoApp\EF\obj\Debug\netstandard2.0\EF.csproj.CoreCompileInputs.cache
