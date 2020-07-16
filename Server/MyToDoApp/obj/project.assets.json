@@ -4990,11 +4990,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MyToDoApp\\MyToDoApp\\MyToDoApp.csproj",
+      "projectUniqueName": "D:\\ToDoApp\\myTODOApp\\Server\\MyToDoApp\\MyToDoApp.csproj",
       "projectName": "MyToDoApp",
-      "projectPath": "D:\\MyToDoApp\\MyToDoApp\\MyToDoApp.csproj",
+      "projectPath": "D:\\ToDoApp\\myTODOApp\\Server\\MyToDoApp\\MyToDoApp.csproj",
       "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-      "outputPath": "D:\\MyToDoApp\\MyToDoApp\\obj\\",
+      "outputPath": "D:\\ToDoApp\\myTODOApp\\Server\\MyToDoApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5013,8 +5013,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\MyToDoApp\\EF\\EF.csproj": {
-              "projectPath": "D:\\MyToDoApp\\EF\\EF.csproj"
+            "D:\\ToDoApp\\myTODOApp\\Server\\EF\\EF.csproj": {
+              "projectPath": "D:\\ToDoApp\\myTODOApp\\Server\\EF\\EF.csproj"
             }
           }
         }

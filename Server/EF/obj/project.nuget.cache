@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "n5kgp8yZ7u6xXTZotx46hbHtnuL45JEqoZLZ9aVExo6S0FwHn0hMO9vdLZtapxJdTNHpMXyQoHX63yXuPRp8+w==",
+  "dgSpecHash": "TiYSZCx+eBpZ18QdchfEnXRTZG0aDrIN2tWjUtmeoGsrsggLwSk1R/pd8LZC3fwwQDyku1eOvkCLTG9IJU6k8w==",
   "success": true,
-  "projectFilePath": "D:\\MyToDoApp\\EF\\EF.csproj",
+  "projectFilePath": "D:\\ToDoApp\\myTODOApp\\Server\\EF\\EF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pc\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MyToDoApp\\EF\\EF.csproj": {}
+    "D:\\ToDoApp\\myTODOApp\\Server\\EF\\EF.csproj": {}
   },
   "projects": {
-    "D:\\MyToDoApp\\EF\\EF.csproj": {
+    "D:\\ToDoApp\\myTODOApp\\Server\\EF\\EF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyToDoApp\\EF\\EF.csproj",
+        "projectUniqueName": "D:\\ToDoApp\\myTODOApp\\Server\\EF\\EF.csproj",
         "projectName": "EF",
-        "projectPath": "D:\\MyToDoApp\\EF\\EF.csproj",
+        "projectPath": "D:\\ToDoApp\\myTODOApp\\Server\\EF\\EF.csproj",
         "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "D:\\MyToDoApp\\EF\\obj\\",
+        "outputPath": "D:\\ToDoApp\\myTODOApp\\Server\\EF\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

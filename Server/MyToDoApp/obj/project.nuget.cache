@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dHFBSxs1bZs+WEhIQTttIk6iG1ETg0CfZy5cjos1cTeEAnXIQsd2fnJTnpXXLjAh+3D+v+Yak3+q81FVlm59xQ==",
+  "dgSpecHash": "Igo/z+98eOMdb1Yvd014brhbq3L7lxNdgMb6TZTQIQ5WYbhNV0WztejuA7aSAFEHiCFkLvzrqPH4M4IjJZjtwQ==",
   "success": true,
-  "projectFilePath": "D:\\MyToDoApp\\MyToDoApp\\MyToDoApp.csproj",
+  "projectFilePath": "D:\\ToDoApp\\myTODOApp\\Server\\MyToDoApp\\MyToDoApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pc\\.nuget\\packages\\dapper\\2.0.35\\dapper.2.0.35.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
