@@ -32,7 +32,7 @@ namespace MyToDoApp
             services.AddScoped<IBooksService, BooksService>();
 
             // Repositories
-            services.AddScoped<IMoviesRepository, MoviesRepositoryEF>();
+            services.AddScoped<IMoviesRepository, MoviesRepositoryDapper>();
             services.AddScoped<ITVSeriesRepository, TVSeriesRepositoryEF>();
             services.AddScoped<IBooksRepository, BooksRepositoryEF>();
 

@@ -9,9 +9,10 @@ namespace MyToDoApp.Service
 {
     public interface IMoviesService
     {
-        List<Movie> getAllMovies();
+        List<Movie> getMoviesToWatch();
         void watchMovie(Movie movie);
         void addMovie(Movie movie);
+        void bulkUpdate(List<Movie> movie);
     }
 
     public class MoviesService: IMoviesService
@@ -28,9 +29,14 @@ namespace MyToDoApp.Service
             this.moviesRepository.add(movie);
         }
 
-        public List<Movie> getAllMovies()
+        public void bulkUpdate(List<Movie> movies)
         {
-            return this.moviesRepository.getAllMovies();
+            moviesRepository.bulkUpdate(movies);
+        }
+
+        public List<Movie> getMoviesToWatch()
+        {
+            return this.moviesRepository.getMoviesToWatch();
         }
 
         public void watchMovie(Movie movie) {

@@ -28,7 +28,25 @@ namespace MyToDoApp.Repositories_Dapper
             }
     }
 
-        public List<Movie> getAllMovies()
+        public void bulkUpdate(List<Movie> movies)
+        {
+            using (var connection = new SqlConnection(@"Server=.\SQLEXPRESS;Database=ToDoDB1;Trusted_Connection=True;"))
+            {
+                foreach (Movie movie in movies)
+                {
+                    connection.Execute(MovieQueries.updateQuery, new
+                    {
+                        movie.Title,
+                        movie.Description,
+                        movie.Link,
+                        movie.IsWatched,
+                        movie.ID
+                    });
+                }
+            }
+        }
+
+        public List<Movie> getMoviesToWatch()
         {
             using (var connection = new SqlConnection(@"Server=.\SQLEXPRESS;Database=ToDoDB1;Trusted_Connection=True;"))
             {

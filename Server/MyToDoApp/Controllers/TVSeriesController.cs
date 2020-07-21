@@ -23,8 +23,8 @@ namespace MyToDoApp.Controllers
             return tvSeriesService.getAllSeries();
         }
 
-        [HttpPost("batchUpdate")]
-        public void Post([FromBody] IEnumerable<TVSeries> serials)
+        [HttpPost("bulkUpdate")]
+        public void Post([FromBody] List<TVSeries> serials)
         {
         }
 

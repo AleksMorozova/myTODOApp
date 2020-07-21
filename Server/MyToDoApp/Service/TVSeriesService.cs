@@ -6,6 +6,8 @@ namespace MyToDoApp.Service
 {
     public interface ITVSeriesService {
         List<TVSeries> getAllSeries();
+        void addSeries(TVSeries tvSeries);
+        void updateTVSeries(TVSeries tvSeries);
     }
     public class TVSeriesService: ITVSeriesService
     {
@@ -16,8 +18,18 @@ namespace MyToDoApp.Service
             this.tvSeriesRepository = tvSeriesRepository;
         }
 
+        public void addSeries(TVSeries tvSeries)
+        {
+            throw new System.NotImplementedException();
+        }
+
         public List<TVSeries> getAllSeries() {
             return this.tvSeriesRepository.getAllSeries();
+        }
+
+        public void updateTVSeries(TVSeries tvSeries)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

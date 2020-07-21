@@ -45,7 +45,6 @@ namespace MyToDoApp.Repositories_EF
                 b.Title = book.Title;
                 b.Description = book.Description;
             }
-   
             context.SaveChanges();
         }
     }

@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Mvc;
 using MyToDoApp.Model;
 using MyToDoApp.Service;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace MyToDoApp.Controllers
 {
@@ -26,19 +25,22 @@ namespace MyToDoApp.Controllers
             return booksService.getAllBooks();
         }
 
-        [HttpPost("batchUpdate")]
-        public void Post([FromBody] IEnumerable<Book> book)
+        [HttpPost("bulkUpdate")]
+        public void Post([FromBody] List<Book> books)
         {
+            this.booksService.bulkUpdate(books);
         }
 
         [HttpPost("update")]
-        public void Post([FromBody] Book books)
+        public void Post([FromBody] Book book)
         {
+            this.booksService.readBook(book);
         }
 
         [HttpPost("add")]
         public void add([FromBody] Book book)
         {
+            this.booksService.addBook(book);
         }
     }
 }

@@ -19,21 +19,23 @@ namespace MyToDoApp.Controllers
             this.moviesService = moviesService;
         }
 
-        [HttpGet("all")]
+        [HttpGet("toWatch")]
         public List<Movie> getToMoviesWatch()
         {
-            return moviesService.getAllMovies();
+            return moviesService.getMoviesToWatch();
         }
 
-        [HttpPost("batchUpdate")]
-        public void batchUpdate([FromBody] IEnumerable<Movie> movies)
+        [HttpPost("bulkUpdate")]
+        public void bulkUpdate([FromBody] List<Movie> movies)
         {
+            moviesService.bulkUpdate(movies);
         }
 
         [HttpPost("update")]
-        public void update([FromBody] Movie movie)
+        public IActionResult update([FromBody] Movie movie)
         {
             moviesService.watchMovie(movie);
+            return Ok(movie);
         }
 
         [HttpPost("add")]

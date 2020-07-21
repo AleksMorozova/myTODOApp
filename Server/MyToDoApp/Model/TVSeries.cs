@@ -8,7 +8,6 @@ namespace MyToDoApp.Model
     public class TVSeries
     {
         public Guid ID { get; set; }
-
         public string Title { get; set; }
         public string Season { get; set; }
         public string Series { get; set; }

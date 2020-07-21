@@ -1,4 +1,6 @@
-﻿using EF.Model;
+﻿using EF;
+using EF.Model;
+using MyToDoApp.Converters;
 using MyToDoApp.Repositories;
 using System;
 using System.Collections.Generic;
@@ -9,15 +11,35 @@ namespace MyToDoApp.Repositories_EF
 {
     public class TVSeriesRepositoryEF: ITVSeriesRepository
     {
-        public List<TVSeries> getAllSeries()
+        ApplicationContext context;
+
+        public TVSeriesRepositoryEF(ApplicationContext context)
         {
-            TVSeries s = new TVSeries();
-            s.Title = "Two broken girls";
-            s.Description = "";
-            s.Season = "3";
-            s.Series = "7";
-            s.Link = "link";
-            return new List<TVSeries>() { s };
+            this.context = context;
+        }
+        public void addSeries(Model.TVSeries series)
+        {
+            using (var c = context)
+            {
+                c.TVSerials.Add(TVSeriesConverter.convertToDTO(series));
+                c.SaveChanges();
+            }
+        }
+
+
+        public void updateTVSeries(Model.TVSeries tvSeries)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Model.TVSeries> getAllSeries()
+        {
+            List<Model.TVSeries> series = new List<Model.TVSeries>();
+            foreach (EF.Model.TVSeries serial in context.TVSerials)
+            {
+                series.Add(TVSeriesConverter.convertFromDTO(serial));
+            }
+            return series;
         }
     }
 }

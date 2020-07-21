@@ -15,10 +15,10 @@ namespace MyToDoApp.Repositories
         {
             this.context = context;
         }
-        public List<Movie> getAllMovies()
+        public List<Movie> getMoviesToWatch()
         {
             List<Movie> movies = new List<Movie>();
-            foreach (EF.Model.Movie movie in context.Movies)
+            foreach (EF.Model.Movie movie in context.Movies.Where(m => m.isWatched == false))
             {
                 movies.Add(MovieConverter.convertFromDTO(movie));
             }
@@ -41,6 +41,18 @@ namespace MyToDoApp.Repositories
                 c.Movies.Add(Converters.MovieConverter.convertToDTO(movie));
                 c.SaveChanges();
             }
+        }
+
+        public void bulkUpdate(List<Movie> movies)
+        {
+            foreach (Movie movie in movies) {
+                var m = context.Movies.Where(m => movie.ID == m.ID).First();
+                m.isWatched = movie.IsWatched;
+                m.Link = movie.Link;
+                m.Title = movie.Title;
+                m.Description = movie.Description;
+            }
+            context.SaveChanges();
         }
     }
 }
